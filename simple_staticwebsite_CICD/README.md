@@ -1,4 +1,4 @@
-#Simple Static website to demostrate the CI/CD process using jenkins and argocd
+# Simple Static website to demostrate the CI/CD process using jenkins and argocd
 
 Full automated CICD pipeline which fetch code from github , build the image and push the image to docker register.
 and created simple bash script which change the image tag in yaml file.
