@@ -29,4 +29,4 @@ def update_image(id,filename):
     f=open(filename,"r")
     r=yaml.safe_load(f)
     print(f"Image changed to {id}")
-    print(r)
+    print(f"image value in yaml file {filename} changed to value {r["spec"]["template"]["spec"]["containers"][0]["image"]}")
