@@ -14,6 +14,9 @@ def patter_match(pattern,filename):
         else:
             continue
 
+
+
+
 def update_image(id,filename):
   try:
     f = open(filename, "r")
@@ -29,4 +32,4 @@ def update_image(id,filename):
     f=open(filename,"r")
     r=yaml.safe_load(f)
     print(f"Image changed to {id}")
-    print(f"image value in yaml file {filename} changed to value {r["spec"]["template"]["spec"]["containers"][0]["image"]}")
+    print(r)

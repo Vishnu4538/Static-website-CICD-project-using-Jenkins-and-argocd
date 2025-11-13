@@ -1,7 +1,8 @@
 import devops_module as dev
-import sys
+import sys as sy
 
-buildid=sys.argv[0]
-filepath=sys.argv[1]
+number=sy.argv[0]
 
-dev.update_image(buildid,filepath)
+path=sy.argv[1]
+
+dev.update_image(number,path)

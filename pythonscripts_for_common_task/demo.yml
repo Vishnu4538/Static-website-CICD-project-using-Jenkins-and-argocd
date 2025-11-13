@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: crashlooplearning
+  name: crashloop-example
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crashlooplearning
+  template:
+    metadata:
+      labels:
+        app: crashlooplearning
+    spec:
+      containers:
+      - image: docker.io/vishnu4538/nginxapp:78
+        name: crashlooplearning
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 2m
+            memory: 2Mi
+
